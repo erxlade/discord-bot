@@ -11,7 +11,6 @@ const client = new Client({
 });
 
 // AYARLAR
-const TOKEN = 'MTU1OTE4ODMxNjU4NTQ2Nzk1NA.Gmy6-L.8a7ORkC2FekXjuafEGYNbuj_5-TTOSp1qCtq_I';
 const GUILD_ID = '1559159795980701696';
 const CHANNEL_ID = '1559181124457201695';
 
@@ -33,4 +32,4 @@ client.once('ready', () => {
     }
 });
 
-client.login(TOKEN);
+client.login(process.env.DISCORD_TOKEN);
